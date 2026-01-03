@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(if [ -d \"public\" ])",
+      "Bash(then echo \"public folder exists\")",
+      "Bash(else echo \"public folder does not exist\")",
+      "Bash(fi)",
+      "WebFetch(domain:www.zebra.com)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(curl:*)",
+      "Bash(dir:*)"
+    ]
+  }
+}
