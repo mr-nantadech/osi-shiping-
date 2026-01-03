@@ -48,14 +48,26 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ```
 osi-shipping-web/
 ├── app/                    # Next.js App Router pages
-│   ├── layout.tsx          # Root layout with MUI ThemeProvider
-│   └── page.tsx           # Home page with MUI and Tailwind components
-├── components/            # Reusable components
-│   └── ThemeProvider.tsx  # MUI ThemeProvider wrapper
-├── theme.tsx              # MUI theme configuration
-├── public/                # Static assets
-├── package.json           # Dependencies and scripts
-└── README.md              # This file
+│   ├── (protected)/        # Protected routes (requires authentication)
+│   ├── api/                # API routes
+│   ├── label-preview/      # Label preview page
+│   ├── login/              # Login page
+│   ├── globals.css         # Global styles
+│   ├── layout.tsx          # Root layout
+│   └── theme.tsx           # MUI theme configuration
+├── components/             # Reusable UI components
+├── constants/              # Application constants (e.g., permissions)
+├── contexts/               # React contexts (e.g., PermissionContext)
+├── docs/                   # Documentation files
+├── interface/              # Interface definitions
+├── lib/                    # Utility libraries and API helpers
+├── mock/                   # Mock data for development
+├── public/                 # Static assets
+├── types/                  # TypeScript type definitions
+├── proxy.ts                # Proxy server configuration
+├── next.config.ts          # Next.js configuration
+├── package.json            # Dependencies and scripts
+└── README.md               # This file
 ```
 
 ## How MUI and Tailwind CSS Work Together
